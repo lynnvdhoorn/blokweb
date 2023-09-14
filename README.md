@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lynn van der Hoorn
 
   #### Je startniveau:
-  Rood
+  Blauw
 
   #### Je focus:
   hier je focus (kies uit responsive óf surface plane)
@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/paradiso" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/paradiso.png" width="375px" alt="Homepagina van Pardiso">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/hamburgermenu.png" width="375px" alt="Hamburgermenu">
  
 </details>
 
