@@ -119,6 +119,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+  De eerste pagina was goed leesbaar met de screenreader, het las de nav voor als links en de h's, p's en images ook op de goede volgorde. Images moeten alleen nog link element bevatten
 </details>
 ## Voortgang 3 (week 4)
 <details>
@@ -132,6 +134,31 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
+
+- Hoe krijg je een werkende slideshow van images die in een grid staan?
+- Hoe zet ik tekst op een goede manier op een image?
+- Hoe krijg ik de h1 over mn grid?
+- De tekst loopt door uit de image, hoe krijg ik het naar de volgende regel (white-space: normal werkt niet)
+- Op welke manier kan ik een gap krijgen tussen linkjes in mn navbar zonder margin?
+- Hoe doe je een searchbalk pop up, is dat hetzelfde als bij het hamburgermenu?
+- Wanneer ik de screenreader aan zet op de officiële site leest ie ook het hamburgermenu op, terwijl die niet uitgeklapt is. Hetzelfde voor de 2e html pagina
+
+
+- hoe maak ik h5 responsive
+- hoe krijg ik mn nav als enige wat in beeld blijft en dat het dan scrolbaar is
+- wat kan ik als beste gebruiken om een img in mn footer te hebben
+- voor die images moet de link om h3 en img heen en kan ik die dan gwn leeg laten
+
+
+- Hoe krijg ik mijn menu hetzelfde als het origineel qua positie?
+- Hoe wordt de footer grid hetzelfde uitgelijnd als de grid erboven en dat de 1e kolom 2 blokken overneemt 
+- Hoe krijg ik de footerbottom goed onder elkaar bij de a en img
+- Hoe krijg ik de pijltjes gericht op bepaalde woorden doe ik dat met nth-child wordt het dan wel overzichtelijk?
+- Hoe werkt dat/wat bedoelen ze met skip link als je de website met controls gebruikt
+- Er zit geen video/audio in mijn website hoe doe ik het toegankelijkheid stukje van media, valt dat dan weg?
+- Moest ik in de nav wel nou 1 kopje uitwerken of was dit al goed?
+
+
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
   - punt 1
