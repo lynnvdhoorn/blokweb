@@ -1,6 +1,27 @@
+@font-face {
+	font-family: 'paradiso-bold';
+	src: url(../fonts/paradiso-2.woff2) format('woff2');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'paradiso-light';
+	src: url(../fonts/paradiso-3.woff2) format('woff2');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'paradiso-light2';
+	src: url(../fonts/paradiso-4.woff2) format('woff2');
+	font-weight: normal;
+}
+
+
+
 /**************/
 /* CSS REMEDY */
 /**************/
+
 *,
 *::after,
 *::before {
@@ -24,19 +45,6 @@
 /* JOUW STYLING */
 /****************/
 
-
-h2 {
-	display: none;
-}
-
-
-@font-face {
-	font-family: 'paradiso-bold';
-	src: url(../font/paradiso-bold.woff2) format('woff2');
-	font-weight: bold;
-}
-
-
 body {
 	background-color: rgba(184, 35, 192, 255);
 	color: white;
@@ -44,6 +52,10 @@ body {
 	padding: 0;
 }
 
+
+/*******/
+/* NAV */
+/*******/
 
 nav:first-of-type ul {
 	display: flex;
@@ -53,7 +65,6 @@ nav:first-of-type ul {
 	list-style-type: none;
 	padding-top: 0.8em;
 	align-items: center;
-	margin-left:2.8em;
 }
 
 nav:first-of-type ul a {
@@ -62,453 +73,17 @@ nav:first-of-type ul a {
 	font-size: x-large;
 	display: flex;
 	align-items: center;
+	font-family: 'paradiso-light2';
 }
 
 nav:first-of-type ul img {
 	width: 1em;
-	margin-right: 0.3em;
 }
 
 nav:first-of-type li:nth-of-type(3) {
 	display: none;
 	margin-left: auto;
 }
-
-
-
-h1 {
-	display: flex;
-	margin-top: -0.1em;
-	justify-content:flex-start;
-	white-space: nowrap;
-	font-size: 20em;
-	z-index: 20;
-	overflow: hidden;
-	text-indent: 0.1em;
-	margin-bottom: -0.49em;
-}
-
-
-
-section:first-of-type {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 0;
-	grid-template-rows: auto auto;
-	z-index: 0;
-}
-
-section:first-of-type article:first-of-type {
-  grid-row-start: 1;
-  grid-column: span 2;
-  position: relative;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  display: flex;
-	justify-content: center;
-}
-
-section:first-of-type article:nth-of-type(2) {
-	grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  position: relative;
-  display: flex;
-	justify-content: right;
-
-}
-
-section:first-of-type article:nth-of-type(3) {
-	grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  position: relative;
-}
-
-
-section:first-of-type article:nth-of-type(4) {
-	grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  position: relative;
-}
-
-section:first-of-type article:last-of-type {
-	grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-end: 3;
-  position: relative;
-  margin-top: -11.5em;
-  display: flex;
-}
-
-
-
-section:first-of-type article img {
-	width: 26.4em;
-	position: relative;
-	z-index: 0;
-}
-
-section:first-of-type article:first-of-type img {
-	width: 53em;
-	position: relative;
-	z-index: 0;
-}
-
-section:first-of-type article:nth-of-type(4) img {
-	width: 28em;
-	position: relative;
-	z-index: 0;
-}
-
-section:first-of-type article:last-of-type img {
-	width: 28em;
-	position: relative;
-	z-index: 0;
-}
-
-section:first-of-type article p:first-of-type,
-section:last-of-type article:nth-of-type(2) p:first-of-type {
-	font-size: 0.9em;
-	position: absolute;
-	border-radius: 2em;
-	background-color: black;
-	padding: 0.3em 1em 0.3em 1em;
-	bottom: 8em;
-	left: 2em;
-}
-
-h3 {
-	position: absolute;
-	font-size: 2.2em;
-	z-index: 1;
-	bottom: 1.2em;
-	left: 0.9em;
-	white-space: normal;
-}
-
-section:first-of-type article p:last-of-type {
-	position: absolute;
-	font-size: 1.8em;
-	bottom: 0.2em;
-	left: 1.1em;
-}
-
-
-section:last-of-type article h3 {
-	position: absolute;
-	bottom: 1.2em;
-	left: 0.35em;
-}
-
-section:last-of-type article p:first-of-type, section:last-of-type article:nth-of-type(2) p:nth-of-type(2) {
-	position: absolute;
-	font-size: 1.2em;
-	bottom: 1.5em;
-	left: 0.8em;
-}
-
-section:last-of-type article p:last-of-type  {
-	position: absolute;
-	font-size:1.2em;
-	bottom: 0.1em;
-	left: 0.8em;
-}
-
-section:last-of-type article:nth-of-type(2) p:first-of-type {
-	position: absolute;
-	top: 15em;
-	left: 0.5em;
-	bottom: calc(30%);
-}
-
-
-
-/*@media (max-width: 60em) {
-	section:first-of-type, section:nth-of-type(2) {
-		grid-template-columns: 1fr;
-	}
-}*/
-
-
-
-h4 {
-	display: flex;
-	justify-content: center;
-	font-size: 15.5em;
-	position: relative;
-	top: -1.2em;
-	margin-bottom: 0;
-	z-index: 1;
-	overflow: hidden;
-	text-indent: 0.1em;
-	justify-content:flex-start;
-	white-space: nowrap;
-}
-
-
-section:last-of-type {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-gap: 1em;
-	display: flex;
-	justify-content: center;
-	overflow-x: auto;
-	margin-bottom:2em;
-}
-
-h5 {
-	font-size: 1.5em;
-	left: 2em;
-	margin-top: -10em;
-	margin-bottom: -30em;
-	white-space: nowrap;
-	position: absolute;
-}
-
-section:last-of-type article {
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	display: inline-block;
-	position: relative;
-	white-space: nowrap;
-	flex: 0 0 calc(23% - 1em);/* Hierdoor nemen de artikelen ongeveer 20% van de beschikbare breedte in, met een kleine marge tussen hen */
-}
-
-section article {
-	overflow: hidden;
-}
-
-section article img {
-	width: 20.1em;
-	transition: transform 0.5s ease;
-}
-
-section article img:hover {
-	transform: scale(1.05);
-}
-
-
-
-
-#toggle {
-	display: none;
-  }
-
-  /**
-	Hamburger
-  **/
-
-  .hamburger {
-	position: relative;
-	top: -2.3em;
-	left: 3em;
-	z-index: 10;
-  }
-  
-  .hamburger div {
-	position: relative;
-	width: 1.5em;
-	height: 0.15em;
-	background-color: white;
-	margin-top: 0.2em;
-	transition: all 0.3s ease-in-out;
-  }
-  
-
-  
-  #toggle:checked + .hamburger::before, #toggle:checked + .hamburger::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: -3em;
-	height: 5em; /* Hoogte van de balk
-	background-color: white; /* Kleur van de balk*/
-	transform: translateY(-50%);
-	display: block; /* Toon de balken wanneer het menu is geopend*/
-  }
-  
-  /* Stijlen voor het hamburgerpictogram wanneer het menu is gesloten*/
-  #toggle:not(:checked) + .hamburger::before, #toggle:not(:checked) + .hamburger::after {
-	display: none; /* Verberg de balken wanneer het menu is gesloten*/
-  }
-
-
-
-  /**
-  Animations
-  **/
-  
-  #toggle:checked + .hamburger .top-bun {
-	transform: rotate(-45deg);
-	top: 0.18em;
-	background-color: black;
-	z-index: 5;
-  }
-
-  #toggle:checked + .hamburger .bottom-bun {
-	opacity: 0;
-	transform: rotate(45deg);
-  }
-
-  #toggle:checked + .hamburger .meat {
-	transform: rotate(45deg);
-	top: -0.18em;
-	background-color: black;
-	z-index: 5;
-  }
-  
- #toggle:checked + .hamburger + nav {
-	top: 0;
-	transform: scale(1);
-  }
-
-
-  /**
-  Nav Styles
-  **/
-  nav:nth-of-type(2) {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: white;
-	top: -100%; left: 0; right: 0; bottom: 0;
-	overflow: hidden;
-	transition: all 0.3s ease-in-out;
-	z-index: 5;
-	max-height: 200%; /* Pas de hoogte naar wens aan */
-  overflow: auto;
-  }
-  
-
-
- nav:nth-of-type(2) ul:first-of-type {
-	display: flex;
-	flex-direction: column;
-  }
-
-  nav:nth-of-type(2) ul:first-of-type li a {
-	position: relative;
-	text-decoration: none;
-	color: black;
-	font-size: 4em;
-	top: 2em;
-	z-index: 5;
-  }
-
-
-
-  nav:nth-of-type(2) ul:nth-of-type(2) {
-	display: flex;
-	flex-direction: column;
-	gap: 1em;
-	display:flex;
-	justify-content: center;
-	margin-left:40em;
-  }
-
-  nav:nth-of-type(2) ul:nth-of-type(2) li a {
-	position: relative;
-	text-decoration: none;
-	color: black;
-	font-size: 1.5em;
-	top:-7em;
-	z-index: 5;
-	text-align: left;
-  }
-
-
-
-  nav:nth-of-type(2) ul:nth-of-type(3) {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap; /* Voorkom dat ze naar de volgende regel gaan */
-  justify-content: space-between;
-  justify-content: left;
-    gap: 1.5em;
-  }
-
-
-  nav:nth-of-type(2) ul:nth-of-type(3) li {
-  flex-basis: calc(50% - 10px); /* Hierdoor krijg je twee kolommen met wat ruimte ertussen */
-    margin-bottom: 10px; /* Voeg wat verticale ruimte toe tussen de items */
-    box-sizing: border-box; /* Zorg ervoor dat de padding en marge binnen de flex-basis passen */
-}
-
-  nav:nth-of-type(2) ul:nth-of-type(3) li a {
-	position: relative;
-	text-decoration: none;
-	color: black;
-	font-size: 1.5em;
-	top:1em;
-	display:flex;
-	justify-content: left;
-	z-index: 5;
-	overflow: hidden;
-  }
-
-
-
-nav:nth-of-type(2) ul:first-of-type li a::after {
-	content: '';
-	position: absolute;
-	background-color: black;
-	height: 0.05em;
-	width: 0;
-	bottom: 0.05em;
-	left: 0; /* Plaats het streepje in het midden van de tekst */
-	transition: width 0.25s ease-out;
-  }
-  
-  nav:nth-of-type(2) ul:first-of-type li a:hover::after {
-	width: 100%;
-  }
-
-  nav:nth-of-type(2) ul:nth-of-type(2) li a::after {
-	content: '';
-	position: absolute;
-	background-color: black;
-	height: 0.1em;
-	bottom: 0.01em;
-	left: 0; /* Plaats het streepje in het midden van de tekst */
-	transition: width 0.25s ease-out;
-  }
-  
-  nav:nth-of-type(2) ul:nth-of-type(2) li a:hover::after {
-	width: fit-content;
-  }
-
-
-  
-  /*#toggle:checked ~ .content {
-	display: none;
-  }*/
-
-
-
-  .close-text {
-	position: absolute;
-	top: 50%;
-	left: 1.5em; /* Pas de positie naar wens aan */
-	transform: translateY(-50%);
-	display: none; /* Standaard verborgen */
-	color: black;
-	font-size: 1.5em; /* Pas de lettergrootte aan naar wens */
-	z-index: 20;
-  }
-  
-  /* Laat de "Close" tekst zien wanneer het hamburgermenu is geopend */
-  #toggle:checked + .hamburger + .close-text {
-	display: block;
-  }
-
-
-/*************/
-/****media*****/
-/**************/
 
 @media (width > 60em) {
 	nav:first-of-type li:nth-of-type(3) {
@@ -525,54 +100,572 @@ nav:nth-of-type(2) ul:first-of-type li a::after {
 
 
 
-  @media (max-width: 60em) {
-	section:last-of-type {
-	  display: flex;
-	  flex-wrap: nowrap;
-	  justify-content: flex-start;
-	  overflow-x: scroll;
-	}
-  
-	section:last-of-type article {
-	  flex: 0 0 calc(200% - 1em); /* Hierdoor neemt de eerste article bijna de volledige beschikbare breedte in */
-	  margin-right: -32em;
-	  left: 1em;
-	}
 
-	section:last-of-type article img {
-		width: 30em; /* Hierdoor krijgt de afbeelding in de eerste article een breedte van 30em */
-	  }
-	  
-	section:last-of-type article:nth-of-type(2) p:first-of-type { 
-	  bottom: calc(20%);
-	  top: 28em;
-	}
+h1 {
+	display: flex;
+	margin: 0;
+	align-items: flex-start;
+	white-space: nowrap;
+	font-size: 24.5vw;
+	z-index: 20;
+	overflow: hidden;
+	text-indent: 0.1em;
+	position: relative;
+	text-shadow: 2px 2px 5px #0000002d;
+	letter-spacing: -0.05em;
+}
 
-	  h5 {
-		left:0.7em;
-		top: 75em;
-	  }
-  }
-
-
-
-  @media (max-width: 60em) {
+@media (max-width: 60em) {
 	h1 {
-	  font-size: 13em; /* Verklein de lettergrootte voor kleinere schermen */
-	  text-indent: 0.02em;
+		font-size: 13em;
+		text-indent: 0.02em;
 	}
-  }
+}
 
-  @media (max-width: 60em) {
+
+
+/****************/
+/* 1E SECTION */
+/****************/
+
+section:first-of-type {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 0;
+	grid-template-rows: 30vw 10vw 30vw;
+	padding: 0 3em;
+}
+
+section:first-of-type article:first-of-type {
+	grid-row-start: 1;
+	grid-column: span 2;
+	position: relative;
+	grid-column-end: 3;
+	grid-row-end: 3;
+}
+
+section:first-of-type article:nth-of-type(2) {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	position: relative;
+
+}
+
+section:first-of-type article:nth-of-type(3) {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	position: relative;
+}
+
+section:first-of-type article:nth-of-type(4) {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	position: relative;
+}
+
+section:first-of-type article:last-of-type {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 4;
+	position: relative;
+}
+
+section:first-of-type article img {
+	width: 26.4em;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+
+section:first-of-type article {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+
+section:first-of-type article p:first-of-type,
+section:last-of-type li:nth-of-type(2) p:first-of-type {
+	font-size: 0.9em;
+	position: absolute;
+	border-radius: 2em;
+	background-color: black;
+	padding: 0.3em 1em 0.3em 1em;
+	bottom: 8em;
+	/* left: 2em; */
+	font-family: 'paradiso-light';
+}
+
+
+section:first-of-type article p:last-of-type {
+	font-size: 1.8em;
+}
+
+
+
+h3 {
+	position: absolute;
+	font-size: 2.2em;
+	z-index: 1;
+	padding-left: 0.8em;
+	padding-bottom: 1em;
+}
+
+
+
+section article,
+section:last-of-type ul li {
+	overflow: hidden;
+}
+
+section article img,
+section:last-of-type ul li img {
+	transition: transform 0.5s ease;
+}
+
+section article img:hover,
+section:last-of-type ul li img:hover {
+	transform: scale(1.05);
+}
+
+
+
+
+h4 {
+	display: flex;
+	justify-content: center;
+	font-size: 18.2vw;
+	position: relative;
+	margin: 0;
+	z-index: 1;
+	overflow: hidden;
+	text-indent: 0.1em;
+	justify-content: flex-start;
+	white-space: nowrap;
+	letter-spacing: -0.05em;
+}
+
+@media (max-width: 60em) {
 	h4 {
-	  font-size: 11em; /* Verklein de lettergrootte voor kleinere schermen */
-	  text-indent: 0.02em;
+		font-size: 11em;
+		text-indent: 0.02em;
 	}
-  }
+}
+
+
+
+/****************/
+/* 2E SECTION */
+/****************/
+
+section:last-of-type h2 {
+	font-size: 1.5em;
+	text-indent: 1.7em;
+	margin-bottom: 0;
+}
+
+section:last-of-type img {
+	width: 20.5em;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+/*@media (max-width: 60em) {
+	section:first-of-type, section:nth-of-type(2) {
+		grid-template-columns: 1fr;
+	}
+}*/
+
+
+
+section:last-of-type li,
+section:first-of-type article {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	white-space: normal;
+	overflow: hidden;
+	white-space: normal;
+}
+
+section:last-of-type ul {
+	position: relative;
+	gap: 1em;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+	/* flex-wrap: wrap; */
+	white-space: normal;
+}
+
+section:last-of-type h3 {
+	white-space: normal;
+	padding-bottom: 1.2em;
+	padding-left: 0.5em;
+}
+
+
+
+section:last-of-type li p:first-of-type {
+	padding-left: 1em;
+	padding-bottom: 1.5em;
+	position: absolute;
+	font-family: 'paradiso-light';
+}
+
+section:first-of-type article p:last-of-type,
+section:last-of-type li p:last-of-type {
+	padding-left: 1em;
+	position: absolute;
+	font-family: 'paradiso-light';
+}
+
+section:last-of-type ul p:first-of-type,
+section:last-of-type li:nth-of-type(2) p:nth-of-type(2) {
+	position: absolute;
+	font-size: 1.2em;
+	font-family: 'paradiso-light';
+}
+
+section:last-of-type li:nth-of-type(2) p:nth-of-type(2) {
+	padding-bottom: 1.5em;
+	padding-left: 1em;
+}
+
+
+
+
+
+/*****************/
+/* HAMBURGERMENU */
+/*****************/
+
+#toggle {
+	display: none;
+}
+
+/**
+	Hamburger
+  **/
+
+.hamburger {
+	position: relative;
+	top: -2.3em;
+	left: 3em;
+	right: -2em;
+	z-index: 10;
+}
+
+.hamburger div {
+	position: relative;
+	width: 1.5em;
+	height: 0.15em;
+	background-color: white;
+	margin-top: 0.2em;
+	transition: all 0.3s ease-in-out;
+}
+
+
+
+#toggle:checked+.hamburger::before,
+#toggle:checked+.hamburger::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: -3em;
+	height: 5em;
+	/* Hoogte van de balk
+	background-color: white; /* Kleur van de balk*/
+	transform: translateY(-50%);
+	display: block;
+	/* Toon de balken wanneer het menu is geopend*/
+}
+
+/* Stijlen voor het hamburgerpictogram wanneer het menu is gesloten*/
+#toggle:not(:checked)+.hamburger::before,
+#toggle:not(:checked)+.hamburger::after {
+	display: none;
+	/* Verberg de balken wanneer het menu is gesloten*/
+}
+
+
+
+/**
+  Animations
+  **/
+
+#toggle:checked+.hamburger .top-bun {
+	transform: rotate(-45deg);
+	top: 0.18em;
+	background-color: black;
+	z-index: 5;
+}
+
+#toggle:checked+.hamburger .bottom-bun {
+	opacity: 0;
+	transform: rotate(45deg);
+}
+
+#toggle:checked+.hamburger .meat {
+	transform: rotate(45deg);
+	top: -0.18em;
+	background-color: black;
+	z-index: 5;
+}
+
+#toggle:checked+.hamburger+nav {
+	top: 0;
+	transform: scale(1);
+}
+
+
+/**
+  Nav Styles
+  **/
+nav:nth-of-type(2) {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	top: -100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+	z-index: 5;
+	/* max-height: 200%;  */
+	/* Pas de hoogte naar wens aan */
+	overflow: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+nav:nth-of-type(2) ul:first-of-type li a {
+	position: relative;
+	text-decoration: none;
+	color: black;
+	font-size: 4em;
+	top: 2em;
+	z-index: 5;
+}
+
+
+
+nav:nth-of-type(2) ul:nth-of-type(2) {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	/* justify-content: center; */
+}
+
+nav:nth-of-type(2) ul:nth-of-type(2) li a {
+	position: relative;
+	text-decoration: none;
+	color: black;
+	font-size: 1.5em;
+	/* z-index: 5; */
+	/* text-align: left; */
+	display: flex;
+	justify-content: center;
+}
+
+
+
+nav:nth-of-type(2) ul:nth-of-type(3) {
+	display: flex;
+	flex-direction: column;
+	/* flex-wrap: wrap;  */
+	/* Voorkom dat ze naar de volgende regel gaan */
+	justify-content: space-between;
+	/* justify-content: left; */
+	gap: 1.5em;
+}
+
+nav:nth-of-type(2) ul:nth-of-type(3) li {
+	/* px bah */
+	flex-basis: calc(50% - 10px);
+	/* Hierdoor krijg je twee kolommen met wat ruimte ertussen */
+	margin-bottom: 10px;
+	/* Voeg wat verticale ruimte toe tussen de items */
+	box-sizing: border-box;
+	/* Zorg ervoor dat de padding en marge binnen de flex-basis passen */
+}
+
+nav:nth-of-type(2) ul:nth-of-type(3) li a {
+	position: relative;
+	text-decoration: none;
+	color: black;
+	font-size: 1.5em;
+	top: 1em;
+	display: flex;
+	justify-content: left;
+	z-index: 5;
+	overflow: hidden;
+}
+
+
+
+nav:nth-of-type(2) ul:first-of-type li a::after {
+	content: '';
+	position: absolute;
+	background-color: black;
+	height: 0.05em;
+	width: 0;
+	bottom: 0.05em;
+	left: 0;
+	/* Plaats het streepje in het midden van de tekst */
+	transition: width 0.25s ease-out;
+}
+
+nav:nth-of-type(2) ul:first-of-type li a:hover::after {
+	width: 100%;
+}
+
+nav:nth-of-type(2) ul:nth-of-type(2) li a::after {
+	content: '';
+	position: absolute;
+	background-color: black;
+	height: 0.1em;
+	bottom: 0.01em;
+	left: 0;
+	/* Plaats het streepje in het midden van de tekst */
+	transition: width 0.25s ease-out;
+}
+
+nav:nth-of-type(2) ul:nth-of-type(2) li a:hover::after {
+	width: fit-content;
+}
+
+
+
+/*#toggle:checked ~ .content {
+	display: none;
+  }*/
+
+
+
+.close-text {
+	position: absolute;
+	top: 50%;
+	left: 1.5em;
+	/* Pas de positie naar wens aan */
+	transform: translateY(-50%);
+	display: none;
+	/* Standaard verborgen */
+	color: black;
+	font-size: 1.5em;
+	/* Pas de lettergrootte aan naar wens */
+	z-index: 20;
+}
+
+/* Laat de "Close" tekst zien wanneer het hamburgermenu is geopend */
+#toggle:checked+.hamburger+.close-text {
+	display: block;
+}
+
+
+
+/*********/
+/* MEDIA */
+/*********/
+
+
+@media (max-width: 60em) {
+	section:last-of-type ul {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		overflow-x: scroll;
+		gap: 1em;
+		
+	}
+
+	section:last-of-type li {
+		flex: 0 0 auto;
+		box-sizing: border-box;
+	}
+
+	section:last-of-type li img {
+		width: 28em;
+		padding-left: 1em;
+	}
+
+	/* section:last-of-type article:nth-of-type(2) p:first-of-type { 
+		bottom: calc(20%);
+		top: 28em;
+	/* } */
+}
+
 
 
 @media (min-width: 60em) {
-ul:nth-of-type(3) {
-    columns: 2;
+	ul:nth-of-type(3) {
+		columns: 2;
+	}
 }
+
+
+
+/* @media screen and (min-width: 1025px) { 
+section:last-of-type > ul {
+	   grid-auto-flow: column;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+/* } */
+
+/* section:last-of-type ul li {
+	display: flex;
+	flex-wrap: wrap; /* Als er niet genoeg ruimte is, zal deze naar de volgende regel gaan */
+/* flex-direction: column; Plaats de elementen boven elkaar */
+/* align-items: flex-start; Plaats de elementen aan de linkerkant van hun container */
+/* gap: 0.5em; Voeg wat marges toe om ruimte tussen de items te creëren */
+/* } */
+
+/* section:last-of-type > ul li h3 {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+	position: absolute;
+/* } */
+
+
+
+.container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+.container article {
+	display: none;
 }
+
+  /* Zorg ervoor dat alleen de zichtbare afbeelding wordt weergegeven */
+  .visible {
+    display: block;
+  }
+
+
+  @media screen and (max-width: 60em) {
+	.container {
+	  display: block; /* Toon de diavoorstelling op kleinere schermen */
+	}
+  }
