@@ -8,40 +8,31 @@
 
 	<title>Paradiso</title>
 
-	<link href="styles/style.css" rel="stylesheet">
+	<link href="./styles/algemeen.css" rel="stylesheet">
+	<link href="./styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/icon.png">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;1,200&display=swap"
 		rel="stylesheet">
-	<link href="scripts/script.js" rel="script">
+	<link href="./scripts/script.js" rel="script">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<body id="page-body">
+<body>
 
 	<header>
+		<a href="#main" class="skip">Skip to main content</a>
+
+		<button aria-label="menu" aria-expanded="false">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
 
 		<nav>
-			<ul>
-				<li><a href="#">Menu</a></li>
-				<li><a href="#"><img src="images/searchicon.png" alt="">Search</a></li>
-				<li><a href="index.html">What's on</a></li>
-				<li><a href="#">My tickets</a></li>
-			</ul>
-		</nav>
-
-		<input id="toggle" type="checkbox"></input>
-
-		<label for="toggle" class="hamburger">
-			<div class="top-bun"></div>
-			<div class="meat"></div>
-			<div class="bottom-bun"></div>
-			<span class="close-text">Close</span>
-		</label>
-
-		<nav>
+			<!-- <button>Close</button> -->
 			<ul>
 				<li><a href="#">What's on</a></li>
-				<li><a href="#">News</a></li>
+				<li><a href="news.html">News</a></li>
 				<li><a href="#">My tickets</a></li>
 				<li><a href="#">Visit</a></li>
 			</ul>
@@ -57,19 +48,52 @@
 			</ul>
 
 			<ul>
-				<li><a href="#">Bassline</a></li>
-				<li><a href="#">Club Paradiso</a></li>
-				<li><a href="#">Indiestad</a></li>
+				<li><a href="#"><img src="./images/bassline.webp" alt="Logo of Bassline">Bassline</a></li>
+				<li><a href="#"><img src="./images/clubparadiso.png" alt="Logo of Club Paradiso">Club Paradiso</a></li>
+				<li><a href="#"><img src="./images/Indiestad.png" alt="Logo of Indiestad">Indiestad</a></li>
 			</ul>
 
 			<ul>
-				<li><a href="#">Sugar Mountain</a></li>
-				<li><a href="#">Super-Sonic Jazz</a></li>
-				<li><a href="#">Ticket to the Tropics</a></li>
+				<li><a href="#"><img src="./images/sugarmountain.jpg" alt="Logo of Sugar Mountain">Sugar Mountain</a>
+				</li>
+				<li><a href="#"><img src="./images/supersonicjazz.webp" alt="Logo of Super-Sonic Jazz">Super-Sonic
+						Jazz</a></li>
+				<li><a href="#"><img src="./images/tickettothetropics.webp" alt="Logo of Ticket to the Tropics">Ticket
+						to the Tropics</a></li>
+			</ul>
+
+			<ul>
+				<li><a href="#"><img src="./images/tiktok.png" alt="Logo of Tiktok"></a></li>
+				<li><a href="#"><img src="./images/instagram.webp" alt="Logo of Instagram"></a></li>
+				<li><a href="#"><img src="./images/spotify.png" alt="Logo of Spotify"></a></li>
+				<li><a href="#"><img src="./images/youtube.png" alt="Logo of Youtube"></a></li>
+			</ul>
+			
+			<ul>
+				<li><a href="#"><img src="./images/gemeenteams.png" alt="Logo of Gemeente Amsterdam"></a></li>
+				<li><a href="#"><img src="./images/heineken.png" alt="Logo of Heineken"></a></li>
+				<li><a href="#"><img src="./images/cofoundedeu.png" alt="Logo of Co-funded by the European Union "></a>
+				</li>
+				<li><p>Bekijk in het Nederlands</p></li>
+			</ul>
+
+			<!-- <li><button aria-hidden="true">Close</button></li> -->
+		</nav>
+
+		<nav>
+			<ul>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#"><img src="images/searchicon.png" alt="Search icon">Search</a></li>
+			</ul>
+
+			<ul>
+				<li><a href="#">What's on</a></li>
+				<li><a href="#">My tickets</a></li>
+				<!-- <li><button aria-hidden="true">Close</button></li> -->
 			</ul>
 		</nav>
-		<div class="content">
-			<h1>Paradiso</h1>
+
+		<h1>Paradiso</h1>
 	</header>
 
 	<main>
@@ -77,87 +101,116 @@
 			<h2></h2>
 
 			<article>
-				<h3>Tkay Maidza</h3>
-				<img src="images/tkaymaidza.png" alt="Picture of singer-songwriter Tkay Maidza">
-				<p>Just confirmed</p>
-				<p><time datetime="2023-11-13"></time>13 November</p>
+				<div>
+					<h3>Tkay Maidza</h3>
+					<p>Just confirmed</p>
+					<p><time datetime="2023-11-13"></time>13 November</p>
+				</div>
+				<a href="#"><img src="./images/tkaymaidza.png" alt="Picture of singer-songwriter Tkay Maidza"></a>
 			</article>
 
 			<article>
-				<h3>LADADI no.9 x Vernon Chatlein (workshop)</h3>
-				<img src="images/ladadi.png" alt="Picture of abstract art made during a workshop">
-				<p>Just confirmed</p>
-				<p><time datetime="2023-09-26"></time>26 September</p>
+				<div>
+					<h3>LADADI no.9 x Vernon Chatlein (workshop)</h3>
+					<p>Just confirmed</p>
+					<p><time datetime="2023-09-26"></time>26 September</p>
+				</div>
+				<a href="#"><img src="./images/ladadi.png" alt="Picture of abstract art made during a workshop"></a>
 			</article>
 
 			<article>
-				<h3>Soda Blonde</h3>
-				<img src="images/sodablonde.png" alt="Picture of music group Soda Blonde">
-				<p>Just confirmed</p>
-				<p><time datetime="2023-01-19"></time>19 January</p>
+				<div>
+					<h3>Soda Blonde</h3>
+					<p>Just confirmed</p>
+					<p><time datetime="2023-01-19"></time>19 January</p>
+				</div>
+				<a href="#"><img src="./images/sodablonde.png" alt="Picture of music group Soda Blonde"></a>
 			</article>
 
 			<article>
-				<h3>The Golden Glows</h3>
-				<img src="images/thegoldenglows.png" alt="Picture of musicartist The Golden Glows">
-				<p>Just confirmed</p>
-				<p><time datetime="2023-12-09"></time>9 December</p>
+				<div>
+					<h3>The Golden Glows</h3>
+					<p>Just confirmed</p>
+					<p><time datetime="2023-12-09"></time>9 December</p>
+				</div>
+				<a href="#"><img src="./images/thegoldenglows.png" alt="Picture of musicartist The Golden Glows"></a>
 			</article>
 
 			<article>
-				<h3>Zack Fox</h3>
-				<img src="images/zackfox.png" alt="Picture of stand-upcomedian Zack Fox">
-				<p>Just confirmed</p>
-				<p><time datetime="2023-11-24"></time>24 November</p>
+				<div>
+					<h3>Zack Fox</h3>
+					<p>Just confirmed</p>
+					<p><time datetime="2023-11-24"></time>24 November</p>
+				</div>
+				<a href="#"><img src="./images/zackfox.png" alt="Picture of stand-upcomedian Zack Fox"></a>
 			</article>
-
 		</section>
 
-		<h4>Programme</h4>
+		<!-- <section> 
+			<a href="#"><img src="./images/tkaymaidza.png" alt="Picture of singer-songwriter Tkay Maidza"></a>
+			<a href="#"><img src="./images/ladadi.png" alt="Picture of abstract art made during a workshop"></a>
+			<a href="#"><img src="./images/sodablonde.png" alt="Picture of music group Soda Blonde"></a>
+			<a href="#"><img src="./images/thegoldenglows.png" alt="Picture of musicartist The Golden Glows"></a>
+			<a href="#"><img src="./images/zackfox.png" alt="Picture of stand-upcomedian Zack Fox"></a>
+		</section>-->
 
 		<section>
+			<h2>Programme</h2>
 			<h2>Today</h2>
 
 			<ul>
-
 				<li>
-					<h3>Lime Cordiale + Tors</h3>
-					<img src="images/limecordiale.png" alt="Picture of the band Lime Cordiale + Tors">
-					<p>In Paradiso</p>
-					<p><time datetime="19:30"></time>Starts 19:30</p>
+					<div>
+						<h3>Lime Cordiale + Tors</h3>
+						<p>In Paradiso</p>
+						<p><time datetime="19:30"></time>Starts 19:30</p>
+					</div>
+					<a href="#"><img src="./images/limecordiale.png" alt="Picture of the band Lime Cordiale + Tors"></a>
 				</li>
 
 				<li>
-					<h3>Talk</h3>
-					<img src="images/talk.png" alt="Picture of singer-songwriter Talk">
-					<p>Sold out</p>
-					<p>In Tolhuistuin</p>
-					<p><time datetime="20:30"></time>Starts 20:30</p>
+					<div>
+						<h3>Talk</h3>
+						<p>Sold out</p>
+						<p>In Tolhuistuin</p>
+						<p><time datetime="20:30"></time>Starts 20:30</p>
+					</div>
+					<a href="#"><img src="./images/talk.png" alt="Picture of singer-songwriter Talk"></a>
 				</li>
 
 				<li>
-					<h3>Nafe Smallz</h3>
-					<img src="images/nafesmallz.png" alt="Picture of rapper Nafe Smallz">
-					<p>In Bitterzoet</p>
-					<p><time datetime="20:30"></time>Starts 20:30</p>
+					<div>
+						<h3>Nafe Smallz</h3>
+						<p>In Bitterzoet</p>
+						<p><time datetime="20:30"></time>Starts 20:30</p>
+					</div>
+					<a href="#"><img src="./images/nafesmallz.png" alt="Picture of rapper Nafe Smallz"></a>
 				</li>
 
 				<li>
-					<h3>Lael Neale</h3>
-					<img src="images/laelneale.png" alt="Picture of musician Lael Neale">
-					<p>In Paradiso</p>
-					<p><time datetime="22:00"></time>Starts 22:00</p>
+					<div>
+						<h3>Lael Neale</h3>
+						<p>In Paradiso</p>
+						<p><time datetime="22:00"></time>Starts 22:00</p>
+					</div>
+					<a href="#"><img src="./images/laelneale.png" alt="Picture of musician Lael Neale"></a>
 				</li>
-
 			</ul>
 		</section>
 
+		<div>
+			<ul>
+				<li><button>By date</button></li>
+				<li><button>By month</button></li>
+				<li><button>By location</button></li>
+				<li><button>By type</button></li>
+			</ul>
 		</div>
 	</main>
 
 	<footer>
-
 	</footer>
+
 	<script defer src="scripts/script.js"></script>
 </body>
 

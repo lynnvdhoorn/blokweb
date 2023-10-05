@@ -29,7 +29,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/pagina2.png" width="375px" alt="Sub pagina">
+  <img src="readme-images/pagina2.png" width="375px" alt="Tweede pagina">
 
 </details>
 
@@ -52,10 +52,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/week2.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/homepage.png" width="375px" alt="breakdown van deel van de pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/menu-open.png" width="375px" alt="breakdown van het menu wanneer het open is">
 
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
@@ -109,9 +109,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Ik weet nu hoe mijn grid in elkaar zit
+  - Ik weet nu dat elke section een header moet bevatten, anders wordt het een div
 - ...
 </details>
 ## Toegankelijkheidstest 2/2 (week 4)
@@ -121,6 +120,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   De eerste pagina was goed leesbaar met de screenreader, het las de nav voor als links en de h's, p's en images ook op de goede volgorde. Images moeten alleen nog link element bevatten
+
 </details>
 ## Voortgang 3 (week 4)
 <details>
@@ -161,22 +161,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Ik weet nu hoe tekst op een goede manier op een image kan worden gezet
+  - De font werkt
+  - Ik moet een 'skip to main content' button maken
   - ...
 </details>
 ## Eindgesprek (week 5)
 <details>
   <summary>uitwerken voor eindgesprek</summary>
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eindopdracht1.png" width="375px" alt="uitomst homepagina">
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik weet nu hoe grids in elkaar zitten en waar het handig/nodig voor is
+  Ook heb ik voor het eerst met media queries gewerkt
+  Ik weet nu hoe je pagina helemaal repsonsive kan maken
+  <img src="readme-images/eindopdracht-2.png" width="375px" alt="uitkomst tweede pagina">
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Niet alles was op precies dezelfde plek te krijgen als het origineel
+  De slideshow van de images uit het grid op de homepagina is helaas niet gelukt
+  
 </details>
 ## Bronnenlijst
 <details open>

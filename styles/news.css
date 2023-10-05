@@ -1,0 +1,436 @@
+@font-face {
+    font-family: 'paradiso-bold';
+    src: url(../fonts/paradiso-bold.woff2) format('woff2');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'paradiso-lighter';
+    src: url(../fonts/paradiso-3.woff2) format('woff2');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'paradiso-light';
+    src: url(../fonts/paradiso-4.woff2) format('woff2');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'paradiso-normal';
+    src: url(../fonts/paradiso-normal.woff2) format('woff2');
+    font-weight: normal;
+}
+
+
+
+/**************/
+/* CSS REMEDY */
+/**************/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-weight: bold;
+}
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+    --color-text: #ffff;
+    --black-color-text: #000000;
+    --color-background: rgba(184, 35, 192, 255);
+    --dark-color-background: rgba(117, 19, 124, 215);
+    --light-color-background: rgba(157, 29, 164, 255);
+    --black-color-background: #000000;
+    --font-family: 'paradiso-bold';
+    --normal-font-family: 'paradiso-normal';
+    --light-font-family: 'paradiso-light';
+    --lighter-font-family: 'paradiso-lighter';
+    --color-border: #ffff;
+    --white-color-underline: #ffff;
+    --color-underline: #000000;
+    --small-font-size: small;
+    --medium-font-size: medium;
+    --large-font-size: large;
+    --x-large-font-size: x-large;
+    --xx-large-font-size: xx-large;
+    --text-shadow: 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+
+
+/***********/
+/* STYLING */
+/***********/
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*************/
+/** NAV BAR **/
+/*************/
+nav:last-of-type ul:first-of-type img {
+    width: 1em;
+}
+
+nav:last-of-type ul:nth-of-type(2) img {
+    position: relative;
+    width: 6em;
+}
+
+nav:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+nav:last-of-type ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    margin: 0;
+}
+
+nav:last-of-type ul:first-child {
+    justify-content: flex-start;
+    padding-left: 1.6em;
+}
+
+nav:last-of-type ul:nth-child(2) {
+    justify-content: center;
+}
+
+nav:last-of-type ul:last-child {
+    justify-content: flex-end;
+}
+
+nav:last-of-type ul a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: var(--x-large-font-size);
+    display: flex;
+    align-items: center;
+    font-family: var(--light-font-family);
+}
+
+@media (max-width: 60em) {
+    header nav:last-of-type ul {
+        gap: 1em;
+    }
+
+    nav:last-of-type ul:nth-child(2),
+    nav:last-of-type ul:last-child li:first-child {
+        display: none;
+    }
+
+    nav:last-of-type ul a {
+        font-size: var(--large-font-size);
+    }
+
+    nav:last-of-type {
+        padding-top: 0;
+    }
+
+    button {
+        transform: translateY(0.6em);
+    }
+}
+
+
+
+
+
+h1 {
+    position: absolute;
+    margin: 0;
+    font-size: 21vw;
+    z-index: 5;
+    line-height: 1.2em;
+    letter-spacing: -0.05em;
+}
+
+@media (max-width: 40em) {
+    h1 {
+        font-size: 39vw;
+        left: 0;
+        right: 0;
+        line-height: 1em;
+    }
+}
+
+
+
+
+
+/****************/
+/** 1E SECTION **/
+/****************/
+
+main {
+    display: grid;
+    padding: 20.5vw 0 2em 0;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 40em) {
+    main {
+        padding: 26vw 0 1em 0;
+    }
+}
+
+section:first-of-type ul:first-of-type {
+    list-style: none;
+}
+
+@media (max-width: 40em) {
+    section:first-of-type ul:first-of-type {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2em;
+    }
+
+    section:first-of-type ul:first-of-type li a {
+        grid-template-columns: 1fr;
+        gap: 1em;
+        text-align: center;
+        line-height: 2.5em;
+        padding: 0;
+    }
+}
+
+section:first-of-type ul:first-of-type li a {
+    list-style: none;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 16.5em 35vw;
+    padding: 0.5vw 3em 2em 3em;
+    text-decoration: none;
+    color: var(--color-text);
+    gap: 2em;
+}
+
+@media (width > 60em) {
+    section:first-of-type ul:first-of-type li a {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 40em) {
+    section:first-of-type ul:first-of-type {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2em;
+    }
+
+    section:first-of-type ul:first-of-type li a {
+        grid-template-columns: 1fr;
+        gap: 1em;
+        text-align: center;
+        line-height: 2.5em;
+        padding: 0;
+    }
+}
+
+section:first-of-type ul li img:last-child {
+    width: 16.5em;
+    transition: transform 0.5s ease;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+section:first-of-type ul li img:last-child:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 40em) {
+    section:first-of-type ul li img:last-child {
+        width: 100%;
+        width: 29em;
+        height: 15em;
+        object-fit: cover;
+    }
+
+    section:first-of-type ul:first-of-type li img:last-child:hover {
+        transform: none;
+    }
+}
+
+section:first-of-type ul:first-of-type li div {
+    flex-direction: column;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+}
+
+@media (max-width: 40em) {
+    section:first-of-type ul:first-of-type li div {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0
+    }
+}
+
+h3 {
+    margin: 0;
+    font-size: 2.5vw;
+    font-family: var(--normal-font-family);
+}
+
+@media (max-width: 40em) {
+    h3 {
+        font-size: 5.5vw;
+        text-align: left;
+        margin: 0
+    }
+}
+
+section:first-of-type ul:first-of-type li p {
+    font-family: var(--lighter-font-family);
+    font-size: 1.1em;
+    position: relative;
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 40em) {
+    section:first-of-type ul:first-of-type li p {
+        font-size: 1em;
+        margin-top: 0;
+    }
+}
+
+section:first-of-type ul:first-of-type li p::after {
+    content: '';
+    position: absolute;
+    background-color: var(--white-color-underline);
+    height: 0.1em;
+    width: 0;
+    bottom: 0.01rem;
+    left: 0;
+    transition: width 0.45s ease-in-out;
+}
+
+section:first-of-type ul:first-of-type li p:hover::after {
+    width: 18%;
+}
+
+@media (max-width: 40em) {
+    section:first-of-type ul:first-of-type li p:hover::after {
+        width: 0;
+    }
+}
+
+section:first-of-type ul li div img:first-child {
+    width: 0.5em;
+}
+
+
+
+
+
+/*********************/
+/** 1E SECTION DIV  **/
+/*********************/
+
+main div ul {
+    display: flex;
+    padding-left: 5em;
+    list-style: none;
+    gap: 0.5em;
+    align-items: center;
+}
+
+main div ul a {
+    color: var(--black-color-text);
+    background-color: var(--light-color-background);
+    padding: 0.7em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: var(--normal-font-family);
+    border-color: var(--light-color-background);
+    border-style: solid;
+    border-width: 0.2em;
+}
+
+main div ul li:first-of-type a {
+    border-color: var(--color-border);
+    border-style: solid;
+    border-width: 0.2em;
+}
+
+main div ul a:hover {
+    border-color: var(--color-border);
+    border-width: 0.2em;
+    border-style: solid;
+}
+
+main div ul li:nth-of-type(6) {
+    letter-spacing: 0.2em;
+    font-size: var(--small-font-size);
+}
+
+
+
+
+
+/****************/
+/**** FOOTER ****/
+/****************/
+
+footer ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5em;
+    padding-left: 7em;
+}
+
+footer ul p {
+    font-family: var(--light-font-family);
+    font-size: var(--large-font-size);
+}
+
+footer ul li:last-of-type p:hover {
+    text-decoration: underline;
+}
+
+footer ul li:first-of-type {
+    display: none;
+}
+
+@media (width > 60em) {
+    footer ul li:first-of-type {
+        display: block;
+    }
+    footer ul p {
+        font-size: var(--small-font-size);
+    }
+}
