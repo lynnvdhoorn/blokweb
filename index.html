@@ -20,16 +20,17 @@
 <body>
 
 	<header>
-		<a href="#main" class="skip">Skip to main content</a>
+		<a href="#main">Skip to main content</a>
 
 		<button aria-label="menu" aria-expanded="false">
 			<span></span>
 			<span></span>
 			<span></span>
+		
 		</button>
 
 		<nav>
-			<!-- <button>Close</button> -->
+
 			<ul>
 				<li><a href="#">What's on</a></li>
 				<li><a href="news.html">News</a></li>
@@ -48,7 +49,7 @@
 			</ul>
 
 			<ul>
-				<li><a href="#"><img src="./images/bassline.webp" alt="Logo of Bassline">Bassline</a></li>
+				<li><a href="#"><img src="./images/bassline.webp" alt="">Bassline</a></li>
 				<li><a href="#"><img src="./images/clubparadiso.png" alt="Logo of Club Paradiso">Club Paradiso</a></li>
 				<li><a href="#"><img src="./images/Indiestad.png" alt="Logo of Indiestad">Indiestad</a></li>
 			</ul>
@@ -63,40 +64,47 @@
 			</ul>
 
 			<ul>
-				<li><a href="#"><img src="./images/tiktok.png" alt="Logo of Tiktok"></a></li>
-				<li><a href="#"><img src="./images/instagram.webp" alt="Logo of Instagram"></a></li>
-				<li><a href="#"><img src="./images/spotify.png" alt="Logo of Spotify"></a></li>
-				<li><a href="#"><img src="./images/youtube.png" alt="Logo of Youtube"></a></li>
+				<li><a href="#" aria-label="Paradiso's Tiktok"><img src="./images/tiktok.png" alt=""></a></li>
+				<li><a href="#" aria-label="Paradiso's Instagram"><img src="./images/instagram.webp" alt=""></a></li>
+				<li><a href="#" aria-label="Paradiso's Spotify"><img src="./images/spotify.png" alt=""></a></li>
+				<li><a href="#" aria-label="Paradiso's Youtube"><img src="./images/youtube.png" alt=""></a></li>
+			</ul>
+<div>
+			<ul>
+				<li><a href="#" aria-label="Gemeente Amsterdam website"><img src="./images/gemeenteams.png" alt=""></a></li>
+				<li><a href="#" aria-label="Heineken website"><img src="./images/heineken.png" alt=""></a></li>
+				<li><a href="#" aria-label="Co-founded by the European Union website"><img src="./images/cofoundedeu.png" alt=""></a></li>
 			</ul>
 			
-			<ul>
-				<li><a href="#"><img src="./images/gemeenteams.png" alt="Logo of Gemeente Amsterdam"></a></li>
-				<li><a href="#"><img src="./images/heineken.png" alt="Logo of Heineken"></a></li>
-				<li><a href="#"><img src="./images/cofoundedeu.png" alt="Logo of Co-funded by the European Union "></a>
-				</li>
-				<li><p>Bekijk in het Nederlands</p></li>
-			</ul>
-
-			<!-- <li><button aria-hidden="true">Close</button></li> -->
+			<a href="#"><img src="./images/pijltjes.png" alt=""><p>Bekijk in het Nederlands</p></a>
+		</div>
 		</nav>
 
 		<nav>
 			<ul>
 				<li><a href="#">Menu</a></li>
-				<li><a href="#"><img src="images/searchicon.png" alt="Search icon">Search</a></li>
+				<li>
+					<div>
+						<button aria-label="Close"><img src="./images/kruisje.png" alt="">Close</button>
+					<form action="#" method="get">
+					  <input type="text" name="u" placeholder="Search programme or artist">
+					  <button type="submit" name="search" aria-label="menu" aria-expanded="false"></button>
+					</form>
+				  </div>
+				  <i><img src="images/searchicon.png" alt="Search icon"></i>
+				</li>
+				<li><a href="#">Search</a></li>
 			</ul>
-
-			<ul>
+ 			<ul>
 				<li><a href="#">What's on</a></li>
 				<li><a href="#">My tickets</a></li>
-				<!-- <li><button aria-hidden="true">Close</button></li> -->
 			</ul>
 		</nav>
 
 		<h1>Paradiso</h1>
 	</header>
 
-	<main>
+	<main id="main">
 		<section>
 			<h2></h2>
 
@@ -146,70 +154,121 @@
 			</article>
 		</section>
 
-		<!-- <section> 
-			<a href="#"><img src="./images/tkaymaidza.png" alt="Picture of singer-songwriter Tkay Maidza"></a>
-			<a href="#"><img src="./images/ladadi.png" alt="Picture of abstract art made during a workshop"></a>
-			<a href="#"><img src="./images/sodablonde.png" alt="Picture of music group Soda Blonde"></a>
-			<a href="#"><img src="./images/thegoldenglows.png" alt="Picture of musicartist The Golden Glows"></a>
-			<a href="#"><img src="./images/zackfox.png" alt="Picture of stand-upcomedian Zack Fox"></a>
-		</section>-->
-
 		<section>
 			<h2>Programme</h2>
-			<h2>Today</h2>
 
-			<ul>
-				<li>
-					<div>
-						<h3>Lime Cordiale + Tors</h3>
-						<p>In Paradiso</p>
-						<p><time datetime="19:30"></time>Starts 19:30</p>
-					</div>
-					<a href="#"><img src="./images/limecordiale.png" alt="Picture of the band Lime Cordiale + Tors"></a>
-				</li>
+			<section>
+				<h3>Today</h3>
 
-				<li>
-					<div>
-						<h3>Talk</h3>
-						<p>Sold out</p>
-						<p>In Tolhuistuin</p>
-						<p><time datetime="20:30"></time>Starts 20:30</p>
-					</div>
-					<a href="#"><img src="./images/talk.png" alt="Picture of singer-songwriter Talk"></a>
-				</li>
+				<ul>
+					<li>
+						<div>
+							<h3>Lime Cordiale + Tors</h3>
+							<p>In Paradiso</p>
+							<p><time datetime="19:30"></time>Starts 19:30</p>
+						</div>
+						<a href="#"><img src="./images/limecordiale.png"
+								alt="Picture of the band Lime Cordiale + Tors"></a>
+					</li>
 
-				<li>
-					<div>
-						<h3>Nafe Smallz</h3>
-						<p>In Bitterzoet</p>
-						<p><time datetime="20:30"></time>Starts 20:30</p>
-					</div>
-					<a href="#"><img src="./images/nafesmallz.png" alt="Picture of rapper Nafe Smallz"></a>
-				</li>
+					<li>
+						<div>
+							<h3>Talk</h3>
+							<p>Sold out</p>
+							<p>In Tolhuistuin</p>
+							<p><time datetime="20:30"></time>Starts 20:30</p>
+						</div>
+						<a href="#"><img src="./images/talk.png" alt="Picture of singer-songwriter Talk"></a>
+					</li>
 
-				<li>
-					<div>
-						<h3>Lael Neale</h3>
-						<p>In Paradiso</p>
-						<p><time datetime="22:00"></time>Starts 22:00</p>
-					</div>
-					<a href="#"><img src="./images/laelneale.png" alt="Picture of musician Lael Neale"></a>
-				</li>
-			</ul>
+					<li>
+						<div>
+							<h3>Nafe Smallz</h3>
+							<p>In Bitterzoet</p>
+							<p><time datetime="20:30"></time>Starts 20:30</p>
+						</div>
+						<a href="#"><img src="./images/nafesmallz.png" alt="Picture of rapper Nafe Smallz"></a>
+					</li>
+
+					<li>
+						<div>
+							<h3>Lael Neale</h3>
+							<p>In Paradiso</p>
+							<p><time datetime="22:00"></time>Starts 22:00</p>
+						</div>
+						<a href="#"><img src="./images/laelneale.png" alt="Picture of musician Lael Neale"></a>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3></h3>
+
+				<form>
+					<ul>
+						<li><button>By date</button></li>
+						<li><button>By month</button></li>
+						<li><button>By location</button></li>
+						<li><button>By type</button></li>
+					</ul>
+				</form>
+
+				<section>
+					<h4><time datetime="2023-10-21">Sat 21 Oct</time></h4>
+
+					<table>
+						<tr>
+							<td>
+								<img src="./images/dots.png" alt="">
+							</td>
+							<td>
+								<h4>Sunrise - ADE</h4>
+								<p>Night owls and early risers come together to unwind / Parallel</p>
+							</td>
+							<td>
+								<p><time datetime="2023-10-22">22 Oct 2023</time></p>
+							</td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<h4><time datetime="2023-10-22">Sun 22 Oct</time></h4>
+
+					<table>
+						<tr>
+							<td>
+								<img src="./images/dots.png" alt="">
+							</td>
+							<td>
+								<h4>Speedy J presents STOOR Live - ADE</h4>
+								<p>Analogue jam session with unbridled electronics and video art</p>
+							</td>
+							<td>
+								<p>Sold out</p>
+							</td>
+						</tr>
+					</table>
+
+					<table>
+						<tr>
+							<td>
+								<img src="./images/dots.png" alt="">
+							</td>
+							<td>
+								<h4>POM + Mood Bored</h4>
+								<p>Fuzzpop from Amsterdam</p>
+							</td>
+							<td>
+								<p><time datetime="22:00">22:00</time></p>
+							</td>
+						</tr>
+					</table>
+				</section>
+				
+			</section>
 		</section>
-
-		<div>
-			<ul>
-				<li><button>By date</button></li>
-				<li><button>By month</button></li>
-				<li><button>By location</button></li>
-				<li><button>By type</button></li>
-			</ul>
-		</div>
 	</main>
-
-	<footer>
-	</footer>
 
 	<script defer src="scripts/script.js"></script>
 </body>

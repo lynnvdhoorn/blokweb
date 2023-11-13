@@ -20,7 +20,7 @@
 <body>
 
     <header>
-        <a href="#main" class="skip">Skip to main content</a>
+        <a href="#main">Skip to main content</a>
 
         <button aria-label="menu" aria-expanded="false">
             <span></span>
@@ -29,7 +29,6 @@
         </button>
 
         <nav>
-            <!-- <button>Close</button> -->
             <ul>
                 <li><a href="index.html">What's on</a></li>
                 <li><a href="#">News</a></li>
@@ -63,41 +62,48 @@
             </ul>
 
             <ul>
-                <li><a href="#"><img src="./images/tiktok.png" alt="Logo of Tiktok"></a></li>
-                <li><a href="#"><img src="./images/instagram.webp" alt="Logo of Instagram"></a></li>
-                <li><a href="#"><img src="./images/spotify.png" alt="Logo of Spotify"></a></li>
-                <li><a href="#"><img src="./images/youtube.png" alt="Logo of Youtube"></a></li>
-            </ul>
-
-            <ul>
-                <li><a href="#"><img src="./images/gemeenteams.png" alt="Logo of Gemeente Amsterdam"></a></li>
-                <li><a href="#"><img src="./images/heineken.png" alt="Logo of Heineken"></a></li>
-                <li><a href="#"><img src="./images/cofoundedeu.png" alt="Logo of Co-funded by the European Union "></a>
-                </li>
-                <li><p>Bekijk in het Nederlands</p></li>
-            </ul>
-
-            
-
-            <!-- <li><button aria-hidden="true">Close</button></li> -->
+				<li><a href="#" aria-label="Paradiso's Tiktok"><img src="./images/tiktok.png" alt=""></a></li>
+				<li><a href="#" aria-label="Paradiso's Instagram"><img src="./images/instagram.webp" alt=""></a></li>
+				<li><a href="#" aria-label="Paradiso's Spotify"><img src="./images/spotify.png" alt=""></a></li>
+				<li><a href="#" aria-label="Paradiso's Youtube"><img src="./images/youtube.png" alt=""></a></li>
+			</ul>
+<div>
+			<ul>
+				<li><a href="#" aria-label="Gemeente Amsterdam website"><img src="./images/gemeenteams.png" alt=""></a></li>
+				<li><a href="#" aria-label="Heineken website"><img src="./images/heineken.png" alt=""></a></li>
+				<li><a href="#" aria-label="Co-founded by the European Union website"><img src="./images/cofoundedeu.png" alt=""></a></li>
+			</ul>
+			
+			<a href="#"><img src="./images/pijltjes.png" alt=""><p>Bekijk in het Nederlands</p></a>
+		</div>
         </nav>
 
         <nav>
-            <ul>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#"><img src="images/searchicon.png" alt="">Search</a></li>
-            </ul>
+			<ul>
+				<li><a href="#">Menu</a></li>
+                <!-- bron: https://codepen.io/3lv3n_snip3r/pen/KdXKYW -->
+				<li>
+					<div>
+						<button aria-label="Close"><img src="./images/kruisje.png" alt="">Close</button>
+					<form action="#" method="get">
+					  <input type="text" name="u" placeholder="Search programme or artist">
+					  <button type="submit" name="search" aria-label="menu" aria-expanded="false"></button>
+					</form>
+				  </div>
+				  <i><img src="images/searchicon.png" alt="Search icon"></i>
+				</li>
+				<li><a href="#">Search</a></li>
+			</ul>
 
             <ul>
                 <li><a href="index.html"><img src="./images/logo.png" alt="Logo of Paradiso"></a></li>
             </ul>
 
-            <ul>
-                <li><a href="index.html">What's on</a></li>
-                <li><a href="#">My tickets</a></li>
-                <!-- <li><button aria-hidden="true">Close</button></li> -->
-            </ul>
-        </nav>
+ 			<ul>
+				<li><a href="#">What's on</a></li>
+				<li><a href="#">My tickets</a></li>
+			</ul>
+		</nav>
 
         <h1>News</h1>
     </header>
@@ -188,7 +194,8 @@
                     </a>
                 </li>
 
-                <li><a href="#">
+                <li>
+                    <a href="#">
                         <div>
                             <h3>PJ Harvey to Paradiso on October 6 and 7</h3>
                             <p>Read more</p>
@@ -197,41 +204,39 @@
                     </a>
                 </li>
             </ul>
+        
+            <nav>
+                <ul>
+                    <li><a href="#" aria-label="Click here to go to the first page">1</a></li>
+                    <li><a href="#" aria-label="Click here to go to the second page">2</a></li>
+                    <li><a href="#" aria-label="Click here to go to the third page">3</a></li>
+                    <li><a href="#" aria-label="Click here to go to the fourth page">4</a></li>
+                    <li><a href="#" aria-label="Click here to go to the fifth page">5</a></li>
+                    <li>...</li>
+                    <li><a href="#" aria-label="Click here to go to the twenty-sixth page">26</a></li>
+                </ul>
+            </nav>
+            
         </section>
-
-
-        <div>
-            <ul>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>...</li>
-                <li><a href="#">26</a></li>
-            </ul>
-        </div>
 
     </main>
 
     <footer>
 
-        <div>
             <ul>
                 <li>
-                    <p>Privacy</p>
+                    <a href="#"><p>Privacy</p></a>
                 </li>
                 <li>
                     <p>Paradiso 2023 ©</p>
                 </li>
                 <li>
-                    <p>Bekijk in het Nederlands</p>
+                    <a href="#"><img src="./images/pijltjeswit.png" alt=""><p>Bekijk in het Nederlands</p></a>
                 </li>
             </ul>
-        </div>
 
     </footer>
-
+    <script defer src="scripts/script.js"></script>
 </body>
 
 </html>

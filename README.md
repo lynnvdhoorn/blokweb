@@ -187,7 +187,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. bron: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp hiermee heb ik de scrollbar gemaakt
+  2. Chat gpt heb ik gebruikt voor mijn javascript code om de hamburgermenu button en uitklap navigatiescherm samen te laten werken. 
+  3. Codepen heb ik gebruikt om het hamburgermenu te maken
+  4. bron: https://codepen.io/3lv3n_snip3r/pen/KdXKYW heb ik gebruikt om het uitklapmenu te maken voor de search bar
 </details>
